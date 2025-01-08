@@ -1,35 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Navigate, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import { Toaster } from "react-hot-toast";
+// import { useAuthContext } from "./context/AuthContext";
+import Learn from "./pages/Learn";
+import Play from "./pages/Play";
+import UserProfile from "./pages/UserProfile";
+import GetPro from "./pages/GetPro";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const { authUser } = useAuthContext();
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="my-2 mx-4">
+      {/* <Routes>
+        <Route
+          path="/*"
+          element={authUser ? <Home /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/learn"
+          element={authUser ? <Learn /> : <Navigate to="/login" />}
+        />
+
+        <Route
+          path="/play"
+          element={authUser ? <Play /> : <Navigate to="/login" />}
+        />
+
+        <Route
+          path="/profile"
+          element={authUser ? <UserProfile /> : <Navigate to="/login" />}
+        />
+
+        <Route
+          path="/getpro"
+          element={authUser ? <GetPro /> : <Navigate to="/login" />}
+        />
+
+        <Route
+          path="/login"
+          element={authUser ? <Navigate to="/" /> : <Login />}
+        />
+        <Route
+          path="/signup"
+          element={authUser ? <Navigate to="/" /> : <Signup />}
+        />
+      </Routes> */}
+      <Routes>
+        <Route path="/*" element={<Home />} />
+        <Route path="/learn" element={<Learn />} />
+
+        <Route path="/play" element={<Play />} />
+
+        <Route path="/profile" element={<UserProfile />} />
+
+        <Route path="/getpro" element={<GetPro />} />
+
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+      <Toaster />
+    </div>
+  );
 }
 
-export default App
+export default App;
