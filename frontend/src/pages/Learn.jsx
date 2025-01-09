@@ -9,10 +9,10 @@ const Learn = () => {
         <NavHome />
       </div>
       <div className=" flex flex-row gap-2">
-        <div className="flex-[0.2]">
+        <div className="flex-[0.15]">
           <Dashboard />
         </div>
-        <div className="flex-[0.8]">
+        <div className="flex-[0.85]">
           <LearnMain />
         </div>
       </div>

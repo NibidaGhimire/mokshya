@@ -58,10 +58,12 @@ function App() {
 
       </Routes> */}
       <Routes>
-        <Route path="/*" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/learn" element={<Learn />} />
 
         <Route path="/play" element={<Play />} />
+
+        <Route path="/play/:id" element={<Play />} />
 
         <Route path="/profile" element={<UserProfile />} />
 

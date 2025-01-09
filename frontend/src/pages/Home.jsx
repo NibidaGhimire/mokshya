@@ -12,10 +12,10 @@ const Home = () => {
         <NavHome />
       </div>
       <div className=" flex flex-row ">
-        <div className="flex-[0.2]">
+        <div className="flex-[0.15]">
           <Dashboard />
         </div>
-        <div className="flex-[0.8]">
+        <div className="flex-[0.85]">
           <Hero />
         </div>
       </div>

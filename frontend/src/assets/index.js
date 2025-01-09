@@ -11,6 +11,6 @@ import css from './css.png';
 import html from './html.png';
 import redux from './redux.png';
 import next from './next.png';
+import about from './about.png';
 
-
-export {logo, bgvector, user, javascript, python, reactjs, nodejs, mongodb, typescript, css, html, redux, next};
+export {about, logo, bgvector, user, javascript, python, reactjs, nodejs, mongodb, typescript, css, html, redux, next};

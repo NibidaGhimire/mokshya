@@ -6,7 +6,7 @@ const Dashboard = () => {
   const location = useLocation();
 
   return (
-    <div className="flex flex-col w-full bg-bg/80   py-4 px-8 rounded-2xl shadow-sm shadow-white gap-8 h-full overflow-hidden ">
+    <div className="flex flex-col w-full bg-bg/80 py-4 px-8 rounded-2xl shadow-sm shadow-white gap-8 min-h-screen h-full overflow-hidden ">
 
       <ul>
         {dashitems.map((item) => (
