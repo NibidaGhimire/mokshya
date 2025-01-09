@@ -5,7 +5,8 @@ export default {
     extend: {},
     colors: {
       bg: "#000c24",
-      white:"#fffeee"
+      white:"#fffeee",
+      primarygreen:"#77f0a4"
     },
   },
   plugins: [require("daisyui")],

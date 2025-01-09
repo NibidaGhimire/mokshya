@@ -1,4 +1,6 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+// import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -7,7 +9,8 @@ import { Toaster } from "react-hot-toast";
 import Learn from "./pages/Learn";
 import Play from "./pages/Play";
 import UserProfile from "./pages/UserProfile";
-import GetPro from "./pages/GetPro";
+import Buy from "./pages/Buy";
+import About from "./pages/About";
 
 function App() {
   // const { authUser } = useAuthContext();
@@ -35,8 +38,13 @@ function App() {
         />
 
         <Route
-          path="/getpro"
-          element={authUser ? <GetPro /> : <Navigate to="/login" />}
+          path="/buy"
+          element={authUser ? <Buy /> : <Navigate to="/login" />}
+        />
+
+        <Route
+          path="/about"
+          element={authUser ? <About /> : <Navigate to="/login" />}
         />
 
         <Route
@@ -47,6 +55,7 @@ function App() {
           path="/signup"
           element={authUser ? <Navigate to="/" /> : <Signup />}
         />
+
       </Routes> */}
       <Routes>
         <Route path="/*" element={<Home />} />
@@ -56,7 +65,9 @@ function App() {
 
         <Route path="/profile" element={<UserProfile />} />
 
-        <Route path="/getpro" element={<GetPro />} />
+        <Route path="/buy" element={<Buy />} />
+
+        <Route path="/about" element={<About />} />
 
         <Route path="/login" element={<Login />} />
 

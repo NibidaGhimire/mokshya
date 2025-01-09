@@ -1,8 +1,8 @@
 import Dashboard from "../components/Dashboard";
-import LearnMain from "../components/LearnMain";
+import BuyMain from "../components/BuyMain";
 import NavHome from "../components/NavHome";
 
-const Learn = () => {
+const Buy = () => {
   return (
     <div className="flex flex-col gap-2">
       <div className="">
@@ -13,11 +13,11 @@ const Learn = () => {
           <Dashboard />
         </div>
         <div className="flex-[0.8]">
-          <LearnMain />
+          <BuyMain />
         </div>
       </div>
     </div>
   );
 };
 
-export default Learn;
+export default Buy;

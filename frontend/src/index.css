@@ -2,14 +2,25 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
-:root{
-    background-color: #000c18 ;
-    background: url("/herobg.jpeg");
-    opacity: 50%;
-	background-repeat: repeat;
-	background-size: cover;
-	background-position: center;
-    height: 100%;    margin: 0;
+:root {
+    background-color: #000c18;
+    position: relative;
+    min-height: 100%; 
+    margin: 0;
     padding: 0;
+}
+
+:root::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/herobg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
 }
