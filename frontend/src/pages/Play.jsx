@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
-import Levels from "../components/levels";
 import NavHome from "../components/NavHome";
 import PlayMain from "../components/PlayMain";
 import EscapeRoom from "../components/EscapeRoom";
+import Levels from "../components/Levels";
+
 
 const Play = () => {
-  const { id, level } = useParams();
+  const { id, levelid } = useParams();
 
   return (
     <div className="flex flex-col gap-2">
@@ -13,9 +14,9 @@ const Play = () => {
         <NavHome />
       </div>
       <div>
-        {!id && !level && <PlayMain />}
-        {id && !level && <Levels />}
-        {id && level && <EscapeRoom />}
+        {!id && !levelid && <PlayMain />}
+        {id && !levelid && <Levels />}
+        {id && levelid && <EscapeRoom />}
       </div>
     </div>
   );

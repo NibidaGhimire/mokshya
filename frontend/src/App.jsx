@@ -65,7 +65,7 @@ function App() {
 
         <Route path="/play/:id" element={<Play />} />
 
-        <Route path="/play/:id/:level" element={<Play />} />
+        <Route path="/play/:id/:levelid" element={<Play />} />
 
         <Route path="/profile" element={<UserProfile />} />
 
