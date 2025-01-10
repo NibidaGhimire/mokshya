@@ -65,6 +65,8 @@ function App() {
 
         <Route path="/play/:id" element={<Play />} />
 
+        <Route path="/play/:id/:level" element={<Play />} />
+
         <Route path="/profile" element={<UserProfile />} />
 
         <Route path="/buy" element={<Buy />} />

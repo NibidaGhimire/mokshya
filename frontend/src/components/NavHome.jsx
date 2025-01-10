@@ -17,6 +17,7 @@ const NavHome = () => {
         </h1>
       </div>
       <div className="flex items-center gap-4 mr-8">
+       
         <button className="outline text-white hover:text-primarygreen px-4 py-2 rounded-lg flex items-center gap-2">
           <BiSolidCoinStack />
           <p>100</p>

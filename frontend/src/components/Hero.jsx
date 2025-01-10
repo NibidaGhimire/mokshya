@@ -1,7 +1,9 @@
 import { HiMiniFire } from "react-icons/hi2";
 import { javascript, nodejs, typescript } from "../assets";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col gap-4 px-4 mr-12">
       <div className="flex flex-row  gap-4 justify-between ">
@@ -18,7 +20,9 @@ const Hero = () => {
               <h2 className="text-primarygreen font-bold">
                 JavaScript Level 1
               </h2>
-              <button className="px-8 py-4 bg-primarygreen/50 hover:bg-primarygreen rounded-lg text-bg">
+              <button 
+              onClick={()=>navigate(`/play/javascript/level1`)}
+              className="px-8 py-4 bg-primarygreen/50 hover:bg-primarygreen rounded-lg text-bg">
                 Continue
               </button>
             </div>
