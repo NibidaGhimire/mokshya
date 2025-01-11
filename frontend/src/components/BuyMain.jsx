@@ -1,4 +1,3 @@
-
 const BuyMain = () => {
   return (
     <div>

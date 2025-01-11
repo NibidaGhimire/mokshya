@@ -1,9 +1,8 @@
 import { 
   javascript, 
   python, 
-  reactjs, nodejs, mongodb, typescript, css, html, redux, next}
+  reactjs, nodejs, mongodb, typescript, css, html, redux, next, scrimba, coursera, Datacamp}
 from "../assets";
-
 
 
 export const dashitems = [
@@ -135,4 +134,31 @@ export const frameworksndb = [
     img: next,
     button: "Start",
   },
+];
+
+export const courses = [
+  {
+    id: 1,
+    title: "Scrimba",
+    description:
+      "Master ReactJS with Scrimba",
+    img: scrimba,
+    button: "Start",
+  },
+  {
+    id: 2,
+    title: "Datacamp",
+    description:
+      "Learn Machine Learning with Datacamp",
+    img: Datacamp,
+    button: "Start",
+  },
+  {
+    id: 3,
+    title: "Coursera",
+    description:
+      "Learn Django with Coursera",
+    img: coursera,
+    button: "Start",
+  }
 ];
