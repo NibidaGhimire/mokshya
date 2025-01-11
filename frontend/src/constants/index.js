@@ -46,7 +46,7 @@ export const languages = [
     path: "play/javascript",
     title: "JavaScript",
     description:
-      "JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.",
+      "JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification.",
     img: javascript,
     button: "Continue",
   },
