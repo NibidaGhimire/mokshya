@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import usePlayCourse from '../zustand/usePlayCourse';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -18,7 +18,7 @@ const Card = ({ item }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative w-96 h-96 perspective-1000"
+      className="relative w-96 h-fit perspective-1000"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
     >
@@ -31,7 +31,6 @@ const Card = ({ item }) => {
         }}
         className="absolute inset-0 rounded-lg bg-gradient-to-br from-purple-600/30 to-blue-500/30"
       />
-
       
       <motion.div
         animate={{
@@ -130,7 +129,7 @@ const Card = ({ item }) => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => playLanguage(item)}
-          className="w-full px-2 py-3 rounded-lg bg-gradient-to-r from-primarygreen/80 to-blue-500/80
+          className="w-full px-2 py-3 rounded-lg bg-gradient-to-r from-primarygreen/80 to-primarygreen/50
                      text-white font-bold uppercase tracking-wider
                      border border-primarygreen/30 hover:border-primarygreen
                      shadow-lg shadow-primarygreen/20 hover:shadow-primarygreen/40

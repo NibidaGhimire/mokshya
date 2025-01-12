@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Trophy, Medal, Crown } from "lucide-react";
 import { HiMiniFire } from "react-icons/hi2";
 import { javascript, nodejs, typescript } from "../assets";

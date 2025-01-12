@@ -5,36 +5,44 @@ import {
 from "../assets";
 
 
+// import { IoMdHome } from "react-icons/io";
+
 export const dashitems = [
   {
     id: "home",
     title: "Home",
     path: "/",
+    // icon: <IoMdHome />,
   },
   {
     id: "play",
     title: "Play",
     path: "/play",
+    // icon: <IoMdHome />,
   },
   {
     id: "learn",
     title: "Learn",
     path: "/learn",
+    // icon: <IoMdHome />,
   },
   {
     id: "profile",
     title: "Profile",
     path: "/profile",
+    // icon: <IoMdHome />,
   },
   {
     id: "buy",
     title: "Buy",
     path: "/buy",
+    // icon: <IoMdHome />,
   },
   {
     id: "about",
     title: "About",
     path: "/about",
+    // icon: <IoMdHome />,
   },
 ];
 
@@ -54,7 +62,7 @@ export const languages = [
     path: "play/python",
     title: "Python",
     description:
-      "Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation.",
+      "Python is an interpreted, high-level and general-purpose programming language. ",
     img: python,
     button: "Start",
   },

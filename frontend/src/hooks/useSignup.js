@@ -23,7 +23,6 @@ const handleInputError = ({ fullName, username, password, confirmPassword, gende
 }
 
 
-
 const useSignup = () => {
 
     const [loading, setLoading] = useState(false);

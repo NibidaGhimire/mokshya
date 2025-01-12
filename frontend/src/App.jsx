@@ -1,11 +1,10 @@
-// import { Navigate, Route, Routes } from "react-router-dom";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import { Toaster } from "react-hot-toast";
-// import { useAuthContext } from "./context/AuthContext";
+import { useAuthContext } from "./context/AuthContext";
 import Play from "./pages/Play";
 import UserProfile from "./pages/UserProfile";
 import Buy from "./pages/Buy";
@@ -13,11 +12,11 @@ import About from "./pages/About";
 import Learn from "./pages/Learn";
 
 function App() {
-  // const { authUser } = useAuthContext();
+  const { authUser } = useAuthContext();
 
   return (
     <div className="my-2 mx-4">
-      {/* <Routes>
+      <Routes>
         <Route
           path="/*"
           element={authUser ? <Home /> : <Navigate to="/login" />}
@@ -29,6 +28,16 @@ function App() {
 
         <Route
           path="/play"
+          element={authUser ? <Play /> : <Navigate to="/login" />}
+        />
+
+        <Route
+          path="/play/:id"
+          element={authUser ? <Play /> : <Navigate to="/login" />}
+        />
+
+        <Route
+          path="/play/:id/:levelid"
           element={authUser ? <Play /> : <Navigate to="/login" />}
         />
 
@@ -55,9 +64,9 @@ function App() {
           path="/signup"
           element={authUser ? <Navigate to="/" /> : <Signup />}
         />
+      </Routes>
 
-      </Routes> */}
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         
         <Route path="/learn" element={<Learn />} />
@@ -77,7 +86,7 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         <Route path="/signup" element={<Signup />} />
-      </Routes>
+      </Routes> */}
       <Toaster />
     </div>
   );
