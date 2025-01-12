@@ -1,18 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import usePlayCourse from '../zustand/usePlayCourse';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const Card = ({ item }) => {
-  const navigate = useNavigate();
-  const { setClickedLanguage } = usePlayCourse();
+
+const LearnJS = ({item}) => {
   const [isHovered, setIsHovered] = useState(false);
-
-  const playLanguage = (item) => {
-    setClickedLanguage(item);
-    navigate(`/${item.path}`);
-  };
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -22,7 +13,7 @@ const Card = ({ item }) => {
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
     >
-     
+      
       <motion.div
         animate={{
           boxShadow: isHovered 
@@ -74,7 +65,7 @@ const Card = ({ item }) => {
           )}
         </AnimatePresence>
 
-      
+        
         <motion.div
           animate={{
             y: isHovered ? [-5, 5, -5] : 0,
@@ -89,10 +80,10 @@ const Card = ({ item }) => {
           <motion.img
             src={item.img}
             alt="image"
-            className="w-32 h-32 object-contain mx-auto"
-            whileHover={{ scale: 1.1, rotate: [0, -5, 5, 0] }}
+            className="w-38 h-38 object-contain mx-auto"
+            whileHover={{ scale: 1.1, rotate: [0, -1, 1, 0] }}
           />
-      
+          
           <motion.div
             animate={{
               opacity: isHovered ? [0.5, 0.8, 0.5] : 0.3,
@@ -103,7 +94,7 @@ const Card = ({ item }) => {
           />
         </motion.div>
 
-      
+       
         <motion.div
           className="px-4 py-2 gap-2 flex flex-col"
         >
@@ -119,17 +110,16 @@ const Card = ({ item }) => {
           </motion.h2>
           <motion.p
             animate={{ opacity: isHovered ? 1 : 0.8 }}
-            className="text-white/80 text-justify"
+            className="text-white/80 justify-center text-center"
           >
             {item.description}
           </motion.p>
         </motion.div>
 
-    
+       
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => playLanguage(item)}
           className="w-full px-2 py-3 rounded-lg bg-gradient-to-r from-primarygreen/80 to-blue-500/80
                      text-white font-bold uppercase tracking-wider
                      border border-primarygreen/30 hover:border-primarygreen
@@ -157,4 +147,4 @@ const Card = ({ item }) => {
   );
 };
 
-export default Card;
+export default LearnJS;

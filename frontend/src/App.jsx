@@ -6,11 +6,11 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import { Toaster } from "react-hot-toast";
 // import { useAuthContext } from "./context/AuthContext";
-import Learn from "./pages/Learn";
 import Play from "./pages/Play";
 import UserProfile from "./pages/UserProfile";
 import Buy from "./pages/Buy";
 import About from "./pages/About";
+import Learn from "./pages/Learn";
 
 function App() {
   // const { authUser } = useAuthContext();
@@ -59,6 +59,7 @@ function App() {
       </Routes> */}
       <Routes>
         <Route path="/" element={<Home />} />
+        
         <Route path="/learn" element={<Learn />} />
 
         <Route path="/play" element={<Play />} />

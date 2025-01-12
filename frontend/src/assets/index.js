@@ -12,10 +12,12 @@ import html from "./courses/html.png";
 import redux from "./courses/redux.png";
 import next from "./courses/next.png";
 import about from './about.png';
-
+import scrimba from "./courses/scrimba.jpg";
+import Datacamp from './courses/Datacamp.png';
+import coursera from './courses/coursera.jpg';
 
 import door from './escaperoom/door.png';
 import key from './escaperoom/key.webp';
 import room from './escaperoom/room.png';
 
-export {door, key, room,about, logo, bgvector, user, javascript, python, reactjs, nodejs, mongodb, typescript, css, html, redux, next};
+export {door, key, room,about, logo, bgvector, user, javascript, python, reactjs, nodejs, mongodb, typescript, css, html, redux, next, scrimba, Datacamp, coursera};
