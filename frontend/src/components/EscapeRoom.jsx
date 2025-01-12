@@ -9,7 +9,7 @@ const EscapeRoom = () => {
         <iframe
           src="https://view.genially.com/6780ac83fded692e5e661b6f/interactive-content-escapegame"
           width="1300"
-          height="800"
+          height="780"
           frameBorder="0"
           title="Escape Room Game"
           style={{ border: "1px solid #ccc" }}
@@ -20,7 +20,7 @@ const EscapeRoom = () => {
         <iframe
           src="https://view.genially.com/6780afb2fded692e5e67c51d/interactive-content-pythonbreakout"
           width="1600"
-          height="800"
+          height="750"
           frameBorder="0"
           title="Escape Room Game"
           style={{ border: "1px solid #ccc" }}

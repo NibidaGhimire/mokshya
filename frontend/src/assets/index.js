@@ -16,8 +16,10 @@ import scrimba from "./courses/scrimba.jpg";
 import Datacamp from './courses/Datacamp.png';
 import coursera from './courses/coursera.jpg';
 
+import levels from './levels.png';
+
 import door from './escaperoom/door.png';
 import key from './escaperoom/key.webp';
 import room from './escaperoom/room.png';
 
-export {door, key, room,about, logo, bgvector, user, javascript, python, reactjs, nodejs, mongodb, typescript, css, html, redux, next, scrimba, Datacamp, coursera};
+export {levels,door, key, room,about, logo, bgvector, user, javascript, python, reactjs, nodejs, mongodb, typescript, css, html, redux, next, scrimba, Datacamp, coursera};
